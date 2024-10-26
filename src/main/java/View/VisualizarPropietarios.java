@@ -5,6 +5,7 @@
 package View;
 import Control.Control;
 import Model.*;
+import java.util.ArrayList;
 /**
  *
  * @author Simon
@@ -17,6 +18,7 @@ public class VisualizarPropietarios extends javax.swing.JFrame {
     public VisualizarPropietarios() {
         initComponents();
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        Control.gestionHS.leerArchivoPropietario();
         jTextArea1.setText(Control.gestionHS.listarPropietarios1());
         
         
