@@ -18,6 +18,7 @@ public class VisualizarPropietarios extends javax.swing.JFrame {
     public VisualizarPropietarios() {
         initComponents();
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        Control.gestionHS.limpiarListaPropietarios();
         Control.gestionHS.leerArchivoPropietario();
         jTextArea1.setText(Control.gestionHS.listarPropietarios1());
         

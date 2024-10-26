@@ -86,8 +86,10 @@ public class MenuPropietario extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if(Control.gestionHS.leerArchivoPropietario()!=null){
+            Control.gestionHS.limpiarListaPropietarios();
             VisualizarPropietarios visualizar = new VisualizarPropietarios();
             visualizar.setVisible(true);
+            
             
             
         }

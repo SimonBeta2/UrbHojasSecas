@@ -319,6 +319,10 @@ public class Urbanizacion {
         return propietariosRecuperados;
     }
     
+    public void limpiarListaPropietarios(){
+        propietariosRecuperados.clear();
+    }
+    
     public void eliminarPropietario(String indice, String salario){
         for(Propietario propietario : propietarios){
             if(propietario.getId().equals(indice) && propietario.getSalario().equals(salario)){
