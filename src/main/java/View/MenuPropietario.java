@@ -16,6 +16,7 @@ public class MenuPropietario extends javax.swing.JFrame {
      */
     public MenuPropietario() {
         initComponents();
+        this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
     }
 
     /**
@@ -87,6 +88,7 @@ public class MenuPropietario extends javax.swing.JFrame {
         if(Control.gestionHS.leerArchivoPropietario()!=null){
             VisualizarPropietarios visualizar = new VisualizarPropietarios();
             visualizar.setVisible(true);
+            
             
         }
         
